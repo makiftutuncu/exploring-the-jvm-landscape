@@ -1,0 +1,10 @@
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+target
+build
+.idea
+.gradle
+.bsp
+.scala-build
