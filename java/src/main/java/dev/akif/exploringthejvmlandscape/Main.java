@@ -4,10 +4,11 @@ import java.util.*;
 record Person(String name, @Nullable Set<String> hobbies) {}
 
 void main() {
-    List<Object> people = List.of(
+    final var people = List.of(
             new Person("John", Set.of("Skiing", "Hiking")),
             new Person("Steve", Set.of()),
-            new Person("Jack", null)
+            new Person("Jack", null),
+            "Not a Person"
     );
 
     people

@@ -6,10 +6,11 @@ inline fun <reified T> Iterable<*>.filterBy(predicate: (T) -> Boolean): List<T> 
     this.filterIsInstance<T>().filter(predicate)
 
 fun main() {
-    val people = listOf<Any>(
+    val people = listOf(
         Person("John", setOf("Skiing", "Hiking")),
         Person("Steve", setOf()),
         Person(name = "Jack", hobbies = null),
+        "Not a Person"
     )
 
     people
